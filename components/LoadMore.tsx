@@ -3,7 +3,6 @@ import { fetchAnime } from "@/app/action";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import AnimeCard, { AnimeProp } from "./AnimeCard";
 
 let page = 2;
 
@@ -27,13 +26,13 @@ function LoadMore() {
       </section>
       <section className="flex justify-center items-center w-full">
         <div ref={ref}>
-          {/* <Image
+          <Image
             src="./spinner.svg"
             alt="spinner"
             width={56}
             height={56}
             className="object-contain"
-          /> */}
+          />
         </div>
       </section>
     </>
